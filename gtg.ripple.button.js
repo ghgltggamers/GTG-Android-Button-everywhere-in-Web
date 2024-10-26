@@ -63,7 +63,7 @@
       const GTG_removeRipple = () => {
         GTG_ripple.dataset.finished = true; // Mark as finished to allow new ripples
         GTG_ripple.style.opacity = '0';
-        GTG_ripple.addEventListener('transitionend', () => GTG_ripple.remove());
+        GTG_ripple.addEventListener('transitionend', () => setTimeout(function(){GTG_ripple.remove()}, 1000));
       };
 
       // Remove ripple on interaction end
@@ -95,7 +95,7 @@
 
     // Apply ripple effect to all button elements by default
     GTG_applyRippleEffect('button', 'rgba(0, 0, 0, 0.5)');
-    // GTG_applyRippleEffect('h1', 'blue')
+    GTG_applyRippleEffect('h1', 'blue')
     
     // You can also apply to other elements with a different color
     // GTG_applyRippleEffect('.custom-container button', 'rgba(0, 255, 0, 0.6)');
