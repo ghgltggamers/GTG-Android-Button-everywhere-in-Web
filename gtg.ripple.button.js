@@ -95,7 +95,7 @@
 
     // Apply ripple effect to all button elements by default
     GTG_applyRippleEffect('button', 'rgba(0, 0, 0, 0.5)');
-    GTG_applyRippleEffect('h1', 'blue')
+    // GTG_applyRippleEffect('h1', 'blue')
     
     // You can also apply to other elements with a different color
     // GTG_applyRippleEffect('.custom-container button', 'rgba(0, 255, 0, 0.6)');
